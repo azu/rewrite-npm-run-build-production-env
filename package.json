@@ -17,7 +17,7 @@
   "bin": {
     "rewrite-npm-run-build-production-env": "./bin/cmd.js"
   },
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Add npm run build to NODE_ENV=production.",
   "main": "lib/rewrite-npm-run-build-production-env.js",
   "directories": {
