@@ -1,0 +1,28 @@
+{
+  "name": "rewrite-npm-run-build-production-env",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/azu/rewrite-npm-run-build-production-env.git"
+  },
+  "author": "azu",
+  "email": "azuciao@gmail.com",
+  "homepage": "https://github.com/azu/rewrite-npm-run-build-production-env",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/azu/rewrite-npm-run-build-production-env/issues"
+  },
+  "files": [
+    "bin/"
+  ],
+  "bin": {
+    "rewrite-npm-run-build-production-env": "./bin/cmd.js"
+  },
+  "version": "1.0.0",
+  "description": "Add npm run build to NODE_ENV=production.",
+  "main": "lib/rewrite-npm-run-build-production-env.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+  }
+}
