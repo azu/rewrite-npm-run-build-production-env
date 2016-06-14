@@ -25,5 +25,5 @@ function addNODE_ENV_if_needed(pkg) {
 var pkg = require(pkgPath);
 var rewrittenPkg = addNODE_ENV_if_needed(pkg);
 
-fs.writeFileSync(pkgPath, rewrittenPkg);
+fs.writeFileSync(pkgPath, JSON.stringify(rewrittenPkg, null, 2));
 console.log("✔ rewrite packge.json");
