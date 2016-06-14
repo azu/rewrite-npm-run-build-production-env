@@ -14,8 +14,8 @@ function addNODE_ENV_if_needed(pkg) {
     if (!pkg.scripts.build) {
         return pkg;
     }
-    const containBabel = pkg.scripts.build.indexOf("babel ");
-    const isNotContainNODE_ENV = pkg.scripts.build.indexOf("NODE_ENV=production");
+    const containBabel = pkg.scripts.build.indexOf("babel ") !== -1;
+    const isNotContainNODE_ENV = pkg.scripts.build.indexOf("NODE_ENV=production") === -1;
     if (isNotContainNODE_ENV && containBabel) {
         pkg.scripts.build = "NODE_ENV=production " + pkg.scripts.build;
     }
